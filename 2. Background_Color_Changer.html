@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Color Change</title>
+</head>
+<body id="backgroundColor" style="background-color: darkviolet">
+
+
+<p id = 'colorIndex'>This</p>
+<script>
+    function colorSelector() {
+        const color = ["red", "black", "white", "yellow", "blue", "fuchsia", "sienna", "green", "violet"];//predefined list of the colors
+    var index =Math.floor(Math.random() * 10); // Generating index
+    return color[index]; // returning the color with the generated index
+
+    }
+</script>
+
+<button onclick="document.getElementById('backgroundColor').style='background-color: '+ colorSelector()">Click me</button>
+</body>
+</html>
